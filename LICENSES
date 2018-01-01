@@ -1,7 +1,63 @@
 /*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
+ */
+
+/*!
  * Vue-Lazyload.js v1.1.4
  * (c) 2017 Awe <hilongjw@gmail.com>
  * Released under the MIT License.
+ */
+
+/*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
+ */
+
+/*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
+ */
+
+/*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
+ */
+
+/*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
+ */
+
+/*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
+ */
+
+/*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
  */
 
 /*!
@@ -21,6 +77,13 @@ object-assign
 (c) Sindre Sorhus
 @license MIT
 */
+
+/**
+ * requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
+ * @see: http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+ * @see: http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+ * @license: MIT license
+ */
 
 /*!
  * jQuery JavaScript Library v3.2.1
@@ -47,12 +110,6 @@ object-assign
  * Date: 2016-08-08
  */
 
-/*!
-  * $script.js JS loader & dependency manager
-  * https://github.com/ded/script.js
-  * (c) Dustin Diaz 2014 | License MIT
-  */
-
 /**
  * vuex v3.0.0
  * (c) 2017 Evan You
@@ -74,9 +131,18 @@ object-assign
  * @version   4.0.5
  */
 
-/**
- * requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
- * @see: http://paulirish.com/2011/requestanimationframe-for-smart-animating/
- * @see: http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
- * @license: MIT license
+/*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
+ */
+
+/*!
+ * @name:project(description)
+ * @link:liuguanhua.github.io
+ * @version:v1.0.0
+ * @update:2018-01-01 14:01:23 星期一
+ * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
  */
