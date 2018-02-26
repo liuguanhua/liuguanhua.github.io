@@ -2,7 +2,7 @@
  * @name:resume(react^16.2+next^5.0、vue^2.5+nuxt^1.0、WebPack^3.6、......)
  * @link:liuguanhua.github.io
  * @version:v1.0.0
- * @update:2018-02-26 15:19:11 星期一
+ * @update:2018-02-26 15:23:55 星期一
  * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
  */
 webpackJsonp([7],{
@@ -1897,7 +1897,7 @@ var setContext = function () {
               store: _context3.t2,
               payload: _context3.t3,
               error: _context3.t4,
-              base: '/',
+              base: '/vue',
               env: _context3.t5
             };
 
@@ -2751,7 +2751,7 @@ var scrollBehavior = function scrollBehavior(to, from, savedPosition) {
 function createRouter() {
   return new __WEBPACK_IMPORTED_MODULE_2_vue_router__["default"]({
     mode: 'history',
-    base: '/',
+    base: '/vue',
     linkActiveClass: 'nuxt-link-active',
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior: scrollBehavior,
