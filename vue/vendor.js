@@ -2,7 +2,7 @@
  * @name:resume(react^16.2+next^5.0、vue^2.5+nuxt^1.0、WebPack^3.6、......)
  * @link:liuguanhua.github.io
  * @version:v1.0.0
- * @update:2018-02-26 15:23:55 星期一
+ * @update:2018-02-26 15:33:24 星期一
  * @author:liuguanhua-liuguahua.github.io-lghayy@foxmail.com
  */
 webpackJsonp([6],{
