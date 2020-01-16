@@ -1,0 +1,1 @@
+(this["webpackJsonpreact-antd-admin"]=this["webpackJsonpreact-antd-admin"]||[]).push([[115],{739:function(a,e,n){a.exports={loading_wrapper:"load_loading_wrapper__TeQzv",hide:"load_hide__30NPB",inner_wrapper:"load_inner_wrapper__lid1J"}}}]);
