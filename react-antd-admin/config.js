@@ -1,6 +1,6 @@
 window.g_config = (function() {
   var drakColor = '#001529'
-  // var publicPath = 'http://localhost:5000/'
+  // var publicPath = 'http://localhost:5000/build/'
   // var publicPath = 'https://react-antd-admin.lhh.now.sh/'
   var publicPath = 'https://liuguanhua.github.io/react-antd-admin/'
   var themes = {

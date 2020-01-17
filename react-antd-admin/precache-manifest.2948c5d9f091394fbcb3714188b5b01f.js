@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d47b1a787a0775aac7b44b8e59c08d3",
+    "revision": "73f82f68188017cefa2976ec1d987c2c",
     "url": "https://liuguanhua.github.io/react-antd-admin/index.html"
   },
   {
@@ -100,7 +100,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://liuguanhua.github.io/react-antd-admin/static/css/15.b00a27ca.chunk.css"
   },
   {
-    "revision": "3fbe7c55f642f753c2b2",
+    "revision": "f9ba26b74594c4b26226",
     "url": "https://liuguanhua.github.io/react-antd-admin/static/css/16.151147be.chunk.css"
   },
   {
@@ -168,11 +168,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://liuguanhua.github.io/react-antd-admin/static/css/44.2bbbb474.chunk.css"
   },
   {
-    "revision": "b29acdb31f5d5282ecd6",
+    "revision": "f40aa860056d90628cf5",
     "url": "https://liuguanhua.github.io/react-antd-admin/static/css/45.151147be.chunk.css"
   },
   {
-    "revision": "7bbaab4d9702ce2b0db6",
+    "revision": "7064129cc7d703932cd6",
     "url": "https://liuguanhua.github.io/react-antd-admin/static/css/46.3a9b62a5.chunk.css"
   },
   {
@@ -216,11 +216,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://liuguanhua.github.io/react-antd-admin/static/css/55.1f9f46db.chunk.css"
   },
   {
-    "revision": "207ef078131108dc43db",
+    "revision": "b94e7ceeaa6cb7788e26",
     "url": "https://liuguanhua.github.io/react-antd-admin/static/css/99.c28a75e2.chunk.css"
   },
   {
-    "revision": "1b94b08e5ecb2123363b",
+    "revision": "d9eeca0ea6459c22bc8c",
     "url": "https://liuguanhua.github.io/react-antd-admin/static/css/main.e4c0150f.chunk.css"
   },
   {
@@ -376,8 +376,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://liuguanhua.github.io/react-antd-admin/static/js/15.2ab45856.chunk.js"
   },
   {
-    "revision": "3fbe7c55f642f753c2b2",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/16.f5aa9d85.chunk.js"
+    "revision": "f9ba26b74594c4b26226",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/16.46879a35.chunk.js"
   },
   {
     "revision": "5fdea533f1fced2f505e",
@@ -504,12 +504,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://liuguanhua.github.io/react-antd-admin/static/js/44.2c5c0a00.chunk.js"
   },
   {
-    "revision": "b29acdb31f5d5282ecd6",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/45.1ee0e4df.chunk.js"
+    "revision": "f40aa860056d90628cf5",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/45.9975a10a.chunk.js"
   },
   {
-    "revision": "7bbaab4d9702ce2b0db6",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/46.6b6646f2.chunk.js"
+    "revision": "7064129cc7d703932cd6",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/46.37f70748.chunk.js"
   },
   {
     "revision": "316e485517fea0f280d1",
@@ -600,12 +600,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://liuguanhua.github.io/react-antd-admin/static/js/66.cbdbec81.chunk.js"
   },
   {
-    "revision": "f7fb884d3e30c5a233cc",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/67.b69b5b2a.chunk.js"
+    "revision": "bb86b7e5ce0ccbfb4f11",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/67.0098984e.chunk.js"
   },
   {
-    "revision": "c1b4415c53439d6dbc04",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/68.0761720d.chunk.js"
+    "revision": "288e32f1a8b677c3f913",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/68.6c4b7a26.chunk.js"
   },
   {
     "revision": "d5a5188573457b79e8ff",
@@ -624,8 +624,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://liuguanhua.github.io/react-antd-admin/static/js/71.4b0c3991.chunk.js"
   },
   {
-    "revision": "1f503d28adf80f08d206",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/72.236b45dd.chunk.js"
+    "revision": "874c34c53df2678daa5f",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/72.700adfbd.chunk.js"
   },
   {
     "revision": "2626b135918a4fee60cc",
@@ -732,16 +732,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://liuguanhua.github.io/react-antd-admin/static/js/96.dcbfce94.chunk.js"
   },
   {
-    "revision": "207ef078131108dc43db",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/99.c0f626b5.chunk.js"
+    "revision": "b94e7ceeaa6cb7788e26",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/99.7bc7a368.chunk.js"
   },
   {
-    "revision": "1b94b08e5ecb2123363b",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/main.0810f48a.chunk.js"
+    "revision": "d9eeca0ea6459c22bc8c",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/main.074e2e3a.chunk.js"
   },
   {
-    "revision": "72ca9c1bb17aa2306245",
-    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/runtime-main.e900a3b1.js"
+    "revision": "1caaad70c4fc8169e837",
+    "url": "https://liuguanhua.github.io/react-antd-admin/static/js/runtime-main.55cdfb8e.js"
   },
   {
     "revision": "9e75ed1a0b08234b1be78dc5ca648f64",
