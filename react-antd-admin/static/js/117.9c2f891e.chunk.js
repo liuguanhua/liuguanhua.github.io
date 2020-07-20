@@ -1,1 +1,0 @@
-(this["webpackJsonpreact-antd-admin"]=this["webpackJsonpreact-antd-admin"]||[]).push([[117],{721:function(a,t,e){a.exports=e.p+"static/media/bronze.9e75ed1a.svg"}}]);

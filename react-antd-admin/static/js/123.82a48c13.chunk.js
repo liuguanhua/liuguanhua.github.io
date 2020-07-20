@@ -1,1 +1,0 @@
-(this["webpackJsonpreact-antd-admin"]=this["webpackJsonpreact-antd-admin"]||[]).push([[123],{727:function(t,a,n){t.exports=n.p+"static/media/btnmenu.674d83c9.svg"}}]);

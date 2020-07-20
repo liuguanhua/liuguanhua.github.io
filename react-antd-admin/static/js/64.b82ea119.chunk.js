@@ -1,1 +1,0 @@
-(this["webpackJsonpreact-antd-admin"]=this["webpackJsonpreact-antd-admin"]||[]).push([[64],{426:function(t,e,a){"use strict";a.r(e);var n=a(0),c=a(89);e.default=Object(c.withAuthRoute)()(Object(c.hasRoutePath)((function(t){var e=t.children;return n.createElement(n.Fragment,null,e)})))}}]);

@@ -1,1 +1,0 @@
-(this["webpackJsonpreact-antd-admin"]=this["webpackJsonpreact-antd-admin"]||[]).push([[114],{719:function(_,a,e){_.exports={inbox_drawer_wrapper:"message_inbox_drawer_wrapper__3Tv_A",inbox_drawer_dark:"message_inbox_drawer_dark__J5PUW",inbox_content_wraper:"message_inbox_content_wraper__1_2Aa"}}}]);

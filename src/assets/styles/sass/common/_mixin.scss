@@ -1,0 +1,156 @@
+@use "sass:map";
+@use "sass:list";
+@use "sass:string";
+
+$side-width: 300px;
+
+$position-list: (
+  fix: fixed,
+  abs: absolute,
+  rel: relative,
+);
+
+$text-align-list: (
+  l: left,
+  c: center,
+  r: right,
+);
+
+$size-list: (
+  xxs: --size-xxs,
+  xs: --size-xs,
+  sm: --size-sm,
+  md: --size-md,
+  lg: --size-lg,
+  xl: --size-xl,
+  xxl: --size-xxl,
+);
+
+$space-list: (
+  xxs: --space-xxs,
+  xs: --space-xs,
+  sm: --space-sm,
+  md: --space-md,
+  lg: --space-lg,
+  xl: --space-xl,
+  xxl: --space-xxl,
+);
+
+$color-list: (
+  primary: --color-primary,
+  black: --color-black,
+  white: --color-white,
+  transparent: --color-transparent,
+  light gray: --color-light-gray,
+  lighten gray: --color-lighten-gray,
+  default gray: --color-default-gray,
+  dark gray: --color-dark-gray,
+);
+
+$dir-list: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+);
+
+$locate-list: map.merge(
+  $dir-list,
+  (t l: top left, l b: left bottom, tblr: top bottom left right)
+);
+
+$locate-space-list: map.merge(
+  $dir-list,
+  (t b: top bottom, l r: left right, tblr: all)
+);
+
+//ref:https://github.com/sass/sass/issues/871
+@mixin each-content($list, $is-var: false) {
+  @each $key, $value in $list {
+    @content ($key, if($is-var,var($value),$value));
+  }
+}
+
+@mixin box-wh($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
+@mixin equal-wh($num: 100%) {
+  @if unitless($num) {
+    $num: #{$num}px;
+  }
+  @include box-wh($num, $num);
+}
+
+@mixin border($dir, $color: --color-default-gray, $num: 1) {
+  @if unitless($num) {
+    $num: #{$num}px;
+  }
+  @if $dir {
+    border-#{$dir}: #{$num} solid $color;
+  } @else {
+    border: #{$num} solid $color;
+  }
+}
+
+@mixin animation-effect() {
+  $name: ani-#{unique-id()};
+  @keyframes #{$name} {
+    @content (null);
+  }
+  :local {
+    @content ($name);
+    // animation: $name $duration linear infinite;
+  }
+}
+
+//生成边距样式
+@function generate-cls-name($list, $cls) {
+  @each $key in $list {
+    $cls: $cls + if($cls, '-', '') + #{$key};
+  }
+  @return $cls;
+}
+
+@mixin generate-mp-content($list, $cls, $prefix: margin, $size: --space-md) {
+  #{$cls} {
+    @include each-content($list) using ($res...) {
+      $key: list.nth($res, 1);
+      @if $key== all {
+        #{$prefix}: var($size);
+      } @else {
+        #{$prefix}-#{$key}: var($size);
+      }
+    }
+  }
+}
+
+@mixin generate-locate-content($list, $cls) {
+  #{$cls} {
+    @include each-content($list) using ($res...) {
+      $key: list.nth($res, 1);
+      #{$key}: 0;
+    }
+  }
+}
+
+@mixin media-md() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg() {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
