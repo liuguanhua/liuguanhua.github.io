@@ -3,6 +3,7 @@ import { ReactComponent as SvgWorks } from '@fonts/svg/menu/works.svg'
 import { ReactComponent as SvgBlog } from '@fonts/svg/menu/blog.svg'
 import { ReactComponent as SvgMenu } from '@fonts/svg/menu/menu.svg'
 import { ReactComponent as SvgContact } from '@fonts/svg/menu/contact.svg'
+import { ReactComponent as SvgOpenSource } from '@fonts/svg/menu/open-source.svg'
 
 interface IMenuItemProps {
   path: string
@@ -14,6 +15,7 @@ interface IMenuItemProps {
 
 export const HOME = '/'
 export const BLOG = '/blog'
+export const OPEN_SOURCE = '/open-source'
 
 export const menuData: IMenuItemProps[] = [
   {
@@ -34,6 +36,12 @@ export const menuData: IMenuItemProps[] = [
     icon: SvgBlog,
     title: '博客',
     enName: 'blog',
+  },
+  {
+    path: OPEN_SOURCE,
+    icon: SvgOpenSource,
+    title: '开源',
+    enName: 'GitHub',
   },
   {
     path: '/tool',

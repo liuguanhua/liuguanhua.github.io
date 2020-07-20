@@ -5,7 +5,7 @@ import classNames from 'classnames'
 
 import { SvgIcon } from '@components/common'
 
-import { menuData, BLOG } from '@scripts/menus'
+import { menuData, BLOG, OPEN_SOURCE } from '@scripts/menus'
 
 interface IMenubarProps {}
 
@@ -16,6 +16,7 @@ const Menubar: React.FC<IMenubarProps> = () => {
     <nav>
       <ul>
         {menuData.map(({ path, title, icon, enName, isHot }) => {
+          const isBlog = Object.is(path, BLOG)
           const node = (
             <>
               <SvgIcon
@@ -45,13 +46,19 @@ const Menubar: React.FC<IMenubarProps> = () => {
               })}
               key={path}
             >
-              {Object.is(path, BLOG) ? (
+              {[BLOG, OPEN_SOURCE].includes(path) ? (
                 <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    alert('功能开发中...，敬请期待^_^')
-                  }}
+                  href={isBlog ? '#' : 'https://github.com/liuguanhua'}
+                  {...(isBlog
+                    ? {
+                        onClick: (e) => {
+                          e.preventDefault()
+                          alert('功能开发中...，敬请期待^_^')
+                        },
+                      }
+                    : {
+                        target: '_blank',
+                      })}
                 >
                   {node}
                 </a>
