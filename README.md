@@ -18,7 +18,7 @@
 ## ⌨️ 本地开发
 
 ```
-下载：git clone https://github.com/liuguanhua/liuguanhua.github.io.git
+下载：git clone -b development https://github.com/liuguanhua/liuguanhua.github.io.git
 
 开发：
     cd liuguanhua.github.io
