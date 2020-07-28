@@ -13,7 +13,9 @@
 
 ## 🏠 主页
 
-[demo](https://liuguanhua.github.io/)
+[地址一 https://lgh.vercel.app/](https://lgh.vercel.app/)
+
+[地址二 https://liuguanhua.github.io/](https://liuguanhua.github.io/)
 
 ## ⌨️ 本地开发
 
