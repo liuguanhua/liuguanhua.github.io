@@ -44,7 +44,7 @@ const SideOperate: React.FC = () => {
     <div className={`pos-fix ${side_fixed_operate}`}>
       <ul className="r-m-p">
         <li>
-          <a href="//liuguanhua.github.io/" title="返回首页">
+          <a href="/" title="返回首页">
             <span className="operate-icon">
               <SvgIcon size="large" component={SvgHome} />
             </span>

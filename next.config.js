@@ -31,7 +31,7 @@ module.exports = withImages({
   devIndicators: {
     autoPrerender: false,
   },
-  assetPrefix: isProd ? publicPath : '',
+  assetPrefix: isProd ? publicPath.slice(0, publicPath.length - 1) : '',
   webpack(config, { isServer, buildId, ...rest }) {
     config.resolve.alias = {
       ...config.resolve.alias,

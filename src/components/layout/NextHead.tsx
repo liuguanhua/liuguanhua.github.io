@@ -20,7 +20,7 @@ const NextHead: React.FC<INextHeadProps> = ({ title = name }) => {
       <title>{title}</title>
       <meta
         name="keywords"
-        content="刘关化,web前端,前端工程师,简历,web前端个人简历,前端开发,前端简历,前端博客,热前端,设计,FE,github,求职,liuguanhua.github.io,liuguanhua"
+        content="刘关化,web前端,前端工程师,简历,web前端个人简历,前端开发,前端简历,最新简历,前端博客,热前端,设计,FE,github,求职,liuguanhua.github.io,lgh.vercel.app,liuguanhua,react,vue"
       />
       <meta
         name="description"

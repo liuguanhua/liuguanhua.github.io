@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "e65ae0eb2b6c8793b7a3";
+/******/ 	var hotCurrentHash = "a1eabfd480b7c525c2df";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -866,7 +866,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function(global) {;(function(self,factory){self.g_config=factory();})(global||window||{},function(){const isProd=\"development\"==='production';const visitPath='https://liuguanhua.github.io/';// const visitPath = 'http://localhost:5000/'\nconst publicPath=isProd?visitPath:'/';return{name:'刘关化|个人简历|前端工程师',logo:publicPath+'static/logo.png',isProd,publicPath};});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb25maWcvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb25maWcvaW5kZXguanM/YWNlNyJdLCJzb3VyY2VzQ29udGVudCI6WyI7KGZ1bmN0aW9uIChzZWxmLCBmYWN0b3J5KSB7XG4gIHNlbGYuZ19jb25maWcgPSBmYWN0b3J5KClcbn0pKGdsb2JhbCB8fCB3aW5kb3cgfHwge30sIGZ1bmN0aW9uICgpIHtcbiAgY29uc3QgaXNQcm9kID0gcHJvY2Vzcy5lbnYuTk9ERV9FTlYgPT09ICdwcm9kdWN0aW9uJ1xuICBjb25zdCB2aXNpdFBhdGggPSAnaHR0cHM6Ly9saXVndWFuaHVhLmdpdGh1Yi5pby8nXG4gIC8vIGNvbnN0IHZpc2l0UGF0aCA9ICdodHRwOi8vbG9jYWxob3N0OjUwMDAvJ1xuICBjb25zdCBwdWJsaWNQYXRoID0gaXNQcm9kID8gdmlzaXRQYXRoIDogJy8nXG4gIHJldHVybiB7XG4gICAgbmFtZTogJ+WImOWFs+WMlnzkuKrkurrnroDljoZ85YmN56uv5bel56iL5biIJyxcbiAgICBsb2dvOiBwdWJsaWNQYXRoICsgJ3N0YXRpYy9sb2dvLnBuZycsXG4gICAgaXNQcm9kLFxuICAgIHB1YmxpY1BhdGgsXG4gIH1cbn0pXG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBTUE7QSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./config/index.js\n");
+eval("/* WEBPACK VAR INJECTION */(function(global) {;(function(self,factory){self.g_config=factory();})(global||window||{},function(){const isProd=\"development\"==='production';// const visitPath = 'https://liuguanhua.github.io/'\n// const visitPath = 'http://localhost:5000/'\nconst visitPath='/';const publicPath=isProd?visitPath:'/';return{name:'刘关化|个人简历|前端工程师',logo:publicPath+'static/logo.png',isProd,publicPath};});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb25maWcvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jb25maWcvaW5kZXguanM/YWNlNyJdLCJzb3VyY2VzQ29udGVudCI6WyI7KGZ1bmN0aW9uIChzZWxmLCBmYWN0b3J5KSB7XG4gIHNlbGYuZ19jb25maWcgPSBmYWN0b3J5KClcbn0pKGdsb2JhbCB8fCB3aW5kb3cgfHwge30sIGZ1bmN0aW9uICgpIHtcbiAgY29uc3QgaXNQcm9kID0gcHJvY2Vzcy5lbnYuTk9ERV9FTlYgPT09ICdwcm9kdWN0aW9uJ1xuICAvLyBjb25zdCB2aXNpdFBhdGggPSAnaHR0cHM6Ly9saXVndWFuaHVhLmdpdGh1Yi5pby8nXG4gIC8vIGNvbnN0IHZpc2l0UGF0aCA9ICdodHRwOi8vbG9jYWxob3N0OjUwMDAvJ1xuICBjb25zdCB2aXNpdFBhdGggPSAnLydcbiAgY29uc3QgcHVibGljUGF0aCA9IGlzUHJvZCA/IHZpc2l0UGF0aCA6ICcvJ1xuICByZXR1cm4ge1xuICAgIG5hbWU6ICfliJjlhbPljJZ85Liq5Lq6566A5Y6GfOWJjeerr+W3peeoi+W4iCcsXG4gICAgbG9nbzogcHVibGljUGF0aCArICdzdGF0aWMvbG9nby5wbmcnLFxuICAgIGlzUHJvZCxcbiAgICBwdWJsaWNQYXRoLFxuICB9XG59KVxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUtBO0FBQ0E7QSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./config/index.js\n");
 
 /***/ }),
 
