@@ -32,7 +32,7 @@ const NextHead: React.FC<INextHeadProps> = ({ title = name }) => {
         href={`${publicPath}static/css/bootstrap-grid.min.css`}
         rel="stylesheet"
       ></link>
-      <script src={`${publicPath}config.js?${BUILD_ID}`}></script>
+      {/* <script src={`${publicPath}config.js?${BUILD_ID}`}></script> */}
     </Head>
   )
 }
