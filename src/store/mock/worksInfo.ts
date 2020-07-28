@@ -1,12 +1,40 @@
 const imgPath = 'works/'
 
 const pcYxtdimgSrc = `${imgPath}yxtd/`,
+  pcHzimgSrc = `${imgPath}latest/`,
   pcXjimgSrc = `${imgPath}xunjie/`,
   pcRzltimgSrc = `${imgPath}rzlt/`,
   wapimgSrc = `${imgPath}wap/`,
   appimgSrc = `${imgPath}applets/`,
   webAppimgSrc = `${imgPath}webapp/`,
   qrcodeimgSrc = `${imgPath}qrcode/`
+
+const latest = [
+  {
+    imgSrc: pcHzimgSrc + '1.jpg',
+    title: '任务管理信息系统',
+    links: 'http://wonfull2020.hz9981.com/',
+    desc:
+      '具有上传(下发)制度，分配任务，事项办理，创建会议等功能，跨部门之间可以相互协作办公， 可以掌握每个部门、每个员工的工作进度和执行情况。',
+    category: '企业服务',
+  },
+  {
+    imgSrc: pcHzimgSrc + '2.jpg',
+    title: '督查管理信息系统',
+    links: 'https://demo.hz9981.com/',
+    desc:
+      '一个确保执行力落地执行的庞大督查体系，发现问题拍照即时上传，监督整改，明确责任人，解决加油站检查质量不高、整改不到位、数据分散等问题的产品。',
+    category: '企业服务',
+  },
+  {
+    imgSrc: pcHzimgSrc + '3.jpg',
+    title: 'React-Antd-Admin',
+    links: 'https://react-antd-admin.lhh.now.sh/',
+    desc:
+      '基于工作中开发需要，设计了一个后台前端管理系统，节省从零开始搭建的时间，使用Node、Mockjs模拟了一层数据服务， 部署在Now.sh平台上。',
+    category: '后台应用',
+  },
+]
 
 const applets = [
   {
@@ -324,6 +352,10 @@ const webApp = [
 ]
 
 export default {
+  latest: {
+    data: latest,
+    title: '最新',
+  },
   applets: {
     data: applets,
     title: '小程序',

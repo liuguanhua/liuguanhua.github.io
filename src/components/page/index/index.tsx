@@ -1,4 +1,5 @@
 import { isString } from 'util'
+import LazyLoad from 'react-lazyload'
 
 import styles from '@styles/sass/page/home.module.scss'
 
@@ -68,7 +69,7 @@ const baseInfo: {
     icon: {
       component: SvgMarker,
     },
-    title: '深圳市南山区',
+    title: '深圳市南山区西丽镇',
   },
   {
     icon: {
@@ -91,25 +92,28 @@ const baseInfo: {
 
 const empiricInfo = [
   {
-    text: `具有pc端、移动端、h5、响应式网页、前后端分离及小程序的开发经验，熟练并掌握Html4(5)、Css(3)、Flex进行页面架构和布局，理解Html语义化、 W3c标准，能进行网页Seo性能优化和处理网页在各大主流浏览器中的兼容性Bug。`,
+    text: `具有PC端、移动端、h5、前后端分离及微信公众号、小程序的开发经验，开源社交分享组件、后台管理设计方案至GitHub。熟练使 用HTML(5)、CSS(3)、JavaScript构建高性能的Web应用程序。`,
   },
   {
-    text: `熟悉JavaScript、原生Bom、Dom、Ajax、Json技术，善用Jquery、 JavaScript来实现网页特效和用户交互效果，能进行代码的封装和插件的开发。`,
+    text: `熟悉JavaScript、ES6、预编译TypeScript、jQuery类库，原生BOM、DOM对象。熟练运用Ajax、Json进行数据交互，常用Axios。`,
   },
   {
-    text: `熟练Vue、React Mvvm框架开发轻量级单页应用WebApp及SSR开发Nuxt、NextJs，开发过微信公众号端直播平台(模块化开发)，使用Es6、Sass编写，也采用过RequireJs构建过个人项目，了解Angular，Redux，React-Native，SeaJs，TypeScript。`,
+    text: `熟练Flex布局，预处理器Sass，熟悉AntDesign、ElementUI、BootStrap等常用前端UI框架。了解Less、Styled-Components。`,
   },
   {
-    text: `能采用Vue-Cli、Angular-Cli脚手架快速搭建工程项目，熟练使用Gulp、WebPack来构建前端开发环境、优化Web项目中前端自动化工作流，了解Grunt、Fis3构建工具。`,
+    text: `熟悉React、Vue框架进行模块化开发单页应用，状态管理库Redux、Vuex、Dva，SSR开发Next、NuxtJs，采用过RequireJs构建过 个人项目。了解Serverless、Angular、SeaJs、React-Native。`,
   },
   {
-    text: `开发过健身类微信小程序，熟悉其相关API调用，会使用BootStrap、AmazeUi等常用前端开发框架，能快速进行跨多尺寸、多平台设备开发，能运用PhotoShop、CorelDraw等界面设计工具进行页面设计， 并具有一定的设计能力。`,
+    text: `开发过健身类微信小程序(WePY)，公众号端直播平台，能快速进行跨多尺寸、多平台设备开发，会用PhotoShop界面设计工具进行页面设计和原型切图。了解IlluStrator、CorelDraw。`,
   },
   {
-    text: `能使用PHP+MySql数据库进行后端开发，熟悉MVC开发模式及运用ThinkPhp框架，熟悉版本控制工具Git/Svn，掌握Linux Shell基本命令，了解Laravel。`,
+    text: `能使用NodeJs、Gulp、WebPack搭建开发环境，并使用过Express和MockJs开发过数据接口，Postman工具进行接口测试。`,
   },
   {
-    text: `对前端技术的热爱，喜欢接受新鲜事物，所以在一直不断的自学和积累各方便的知识，拥有良好的沟通能力及团队协作能力，为人诚恳，富有责任心，能保证项目在周期内完成的同时也兼顾了质量。`,
+    text: `了解Http协议，熟悉使用Git版本控制，Charles抓包，掌握Linux Shell基本命令。了解Svn、Jenkins、Docker、MySQL。`,
+  },
+  {
+    text: `拥有良好的代码编程习惯，较强的学习能力和解决问题的能力，能保证项目在周期内完成的同时也兼顾了质量。`,
   },
 ]
 
@@ -242,11 +246,17 @@ const SkillChildList: React.FC<{
         return (
           <div className="col-4 col-sm-3 col-md-4 col-lg-3 col-xl-2" key={key}>
             <a href={`${url}/`} target="_blank">
-              <img
-                className="bg-color-white bdr-small"
-                src={`${require(`@images/skill/${path}.png`)}`}
-                alt={name}
-              />
+              <LazyLoad
+                placeholder={
+                  <img src="https://dummyimage.com/200x200/eee/eee" />
+                }
+              >
+                <img
+                  className="bg-color-white bdr-small"
+                  src={`${require(`@images/skill/${path}.png`)}`}
+                  alt={name}
+                />
+              </LazyLoad>
               <h4 className="ellipsis font-weight-normal r-m-p">{name}</h4>
             </a>
           </div>

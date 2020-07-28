@@ -9,6 +9,11 @@
         "url": "//reactjs.org"
       },
       {
+        "name": "TypeScript",
+        "imgName": "TypeScript",
+        "url": "//typescriptlang.org"
+      },
+      {
         "name": "React Native",
         "imgName": "ReactNative",
         "url": "//facebook.github.io/react-native"
@@ -42,6 +47,16 @@
         "name": "Es6",
         "imgName": "EcmaScript",
         "url": "//es6.ruanyifeng.com"
+      },
+      {
+        "name": "NodeJs",
+        "imgName": "NodeJs",
+        "url": "//nodejs.org"
+      },
+      {
+        "name": "Express",
+        "imgName": "Express",
+        "url": "//expressjs.com"
       },
       {
         "name": "jQuery",
@@ -82,6 +97,16 @@
         "name": "Css3",
         "imgName": "Css3",
         "url": "//developer.mozilla.org/zh-CN/docs/Web/CSS"
+      },
+      {
+        "name": "AntDesign",
+        "imgName": "AntDesign",
+        "url": "//ant.design"
+      },
+      {
+        "name": "Element",
+        "imgName": "Element",
+        "url": "//element.eleme.cn"
       },
       {
         "name": "BootStrap",
@@ -141,6 +166,11 @@
         "url": "//yarnpkg.com"
       },
       {
+        "name": "Docker",
+        "imgName": "Docker",
+        "url": "//www.docker.com"
+      },
+      {
         "name": "Composer",
         "imgName": "Composer",
         "url": "//getcomposer.org"
@@ -155,6 +185,11 @@
         "name": "Postman",
         "imgName": "Postman",
         "url": "//www.getpostman.com"
+      },
+      {
+        "name": "Charles",
+        "imgName": "Charles",
+        "url": "//www.charlesproxy.com"
       },
       {
         "name": "Stack Overflow",
