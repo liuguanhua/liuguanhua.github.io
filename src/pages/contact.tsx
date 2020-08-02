@@ -63,7 +63,6 @@ const Contact: React.FC<IContactProps> = () => {
             </a>
           </li>
         </ul>
-        <div id="SOHUCS"></div>
         <Modal
           wrapClassName="tac"
           onClose={hideContent}
@@ -74,6 +73,7 @@ const Contact: React.FC<IContactProps> = () => {
         >
           <img className="vam" src={require(`@images/wx-qrcode.png`)} alt="" />
         </Modal>
+        {/* <div id="SOHUCS"></div>
         <script
           charSet="utf-8"
           type="text/javascript"
@@ -85,7 +85,7 @@ const Contact: React.FC<IContactProps> = () => {
               appid: 'cyuXSRhNO',
               conf: 'prod_df1e4dc305ccfba8450955314e211ab5',
             })}
-        </script>
+        </script> */}
       </LayoutMain>
       <style jsx>{`
         li {

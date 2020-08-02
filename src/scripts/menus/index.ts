@@ -65,8 +65,8 @@ export const menuData: IMenuItemProps[] = [
     icon: SvgContact,
     title: '联系',
     enName: 'contact',
-    linksConfig: {
-      href: '/contact',
-    },
+    // linksConfig: {
+    //   href: '/contact',
+    // },
   },
 ]

@@ -30,7 +30,7 @@ const exportPathMap = {
 }
 
 module.exports = withImages({
-  exportPathMap(res) {
+  exportPathMap: async function (res) {
     return exportPathMap
   },
   exclude: [
