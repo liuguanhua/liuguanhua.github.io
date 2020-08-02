@@ -63,6 +63,7 @@ const Contact: React.FC<IContactProps> = () => {
             </a>
           </li>
         </ul>
+        <div id="SOHUCS"></div>
         <Modal
           wrapClassName="tac"
           onClose={hideContent}
@@ -73,6 +74,18 @@ const Contact: React.FC<IContactProps> = () => {
         >
           <img className="vam" src={require(`@images/wx-qrcode.png`)} alt="" />
         </Modal>
+        <script
+          charSet="utf-8"
+          type="text/javascript"
+          src="//cy-cdn.kuaizhan.com/upload/changyan.js"
+        ></script>
+        <script type="text/javascript">
+          {IS_CLIENT &&
+            window.changyan.api.config({
+              appid: 'cyuXSRhNO',
+              conf: 'prod_df1e4dc305ccfba8450955314e211ab5',
+            })}
+        </script>
       </LayoutMain>
       <style jsx>{`
         li {

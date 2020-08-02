@@ -366,10 +366,11 @@ const Sidebar: React.FC<ISidebarProps> = () => {
           ...(toogle && {
             left: 0,
           }),
+          zIndex: 13,
           ...bodyStyle,
         }}
         className={classNames(
-          `pos-fix z-2 t-l-0 h-100 bg-color-white ${side_wrapper}`,
+          `pos-fix t-l-0 h-100 bg-color-white ${side_wrapper}`,
           {
             active: toogle,
           }

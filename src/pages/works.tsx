@@ -188,7 +188,8 @@ const WorkItem: React.FC<{
         >
           <img
             className="photo"
-            src={require('@images/' + item.imgSrc)}
+            // src={require('@images/' + item.imgSrc)}
+            src={`/static/${item.imgSrc}`}
             alt={title}
           />
         </Lazyload>
@@ -225,7 +226,8 @@ const WorkItem: React.FC<{
           {qrcodeImg ? (
             <img
               className="pos-abs tblr-0 m-auto"
-              src={require(`@images/${qrcodeImg}`)}
+              // src={require(`@images/${qrcodeImg}`)}
+              src={`/static/${qrcodeImg}`}
               alt=""
             />
           ) : (
@@ -388,10 +390,10 @@ const Works: React.FC<IWorksProps> = () => {
         pageTitleProps={{
           zhName: (
             <>
-              <span className="font-family-georgia">30</span>余个作品
+              <span className="font-family-georgia">40</span>个作品
             </>
           ),
-          enName: 'more than 30 works',
+          enName: 'more than 40 works',
         }}
       >
         <StickyContainer>

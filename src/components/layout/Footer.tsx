@@ -41,7 +41,7 @@ const SideOperate: React.FC = () => {
   useEventListener('scroll', handleScrollHeight)
 
   return (
-    <div className={`pos-fix ${side_fixed_operate}`}>
+    <div className={`pos-fix z-2 ${side_fixed_operate}`}>
       <ul className="r-m-p">
         <li>
           <a href="/" title="返回首页">

@@ -101,7 +101,7 @@ const empiricInfo = [
     text: `熟练Flex布局，预处理器Sass，熟悉AntDesign、ElementUI、BootStrap等常用前端UI框架。了解Less、Styled-Components。`,
   },
   {
-    text: `熟悉React、Vue框架进行模块化开发单页应用，状态管理库Redux、Vuex、Dva，SSR开发Next、NuxtJs，采用过RequireJs构建过 个人项目。了解Serverless、Angular、SeaJs、React-Native。`,
+    text: `熟悉React、Vue框架进行模块化开发单页应用，状态管理库Redux、Vuex、Dva，SSR开发Next、NuxtJs，采用过RequireJs构建过 个人项目。了解Angular、SeaJs、React-Native。`,
   },
   {
     text: `开发过健身类微信小程序(WePY)，公众号端直播平台，能快速进行跨多尺寸、多平台设备开发，会用PhotoShop界面设计工具进行页面设计和原型切图。了解IlluStrator、CorelDraw。`,
@@ -110,7 +110,7 @@ const empiricInfo = [
     text: `能使用NodeJs、Gulp、WebPack搭建开发环境，并使用过Express和MockJs开发过数据接口，Postman工具进行接口测试。`,
   },
   {
-    text: `了解Http协议，熟悉使用Git版本控制，Charles抓包，掌握Linux Shell基本命令。了解Svn、Jenkins、Docker、MySQL。`,
+    text: `熟悉使用Git版本控制，Charles抓包，掌握Linux Shell基本命令。了解Http协议、Svn、Jenkins、Docker、MySQL。`,
   },
   {
     text: `拥有良好的代码编程习惯，较强的学习能力和解决问题的能力，能保证项目在周期内完成的同时也兼顾了质量。`,
@@ -247,13 +247,12 @@ const SkillChildList: React.FC<{
           <div className="col-4 col-sm-3 col-md-4 col-lg-3 col-xl-2" key={key}>
             <a href={`${url}/`} target="_blank">
               <LazyLoad
-                placeholder={
-                  <img src="https://dummyimage.com/200x200/eee/eee" />
-                }
+                placeholder={<img src="/static/placeholder-skill.png" />}
               >
                 <img
                   className="bg-color-white bdr-small"
-                  src={`${require(`@images/skill/${path}.png`)}`}
+                  // src={`${require(`@images/skill/${path}.png`)}`}
+                  src={`/static/skill/${path}.png`}
                   alt={name}
                 />
               </LazyLoad>
@@ -269,6 +268,9 @@ const SkillChildList: React.FC<{
           }
           a {
             display: block;
+          }
+          a:hover {
+            opacity: 0.8;
           }
           img {
             width: 70%;

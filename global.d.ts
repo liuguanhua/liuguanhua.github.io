@@ -11,6 +11,7 @@ declare module '*.svg' {
 
 declare interface Window {
   g_config: any
+  changyan: any
 }
 
 declare namespace NodeJS {
