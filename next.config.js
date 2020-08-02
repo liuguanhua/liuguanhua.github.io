@@ -22,7 +22,17 @@ const extendsAlias = {
   '@store': resolveApp('src/store'),
 }
 
+const exportPathMap = {
+  '/': { page: '/' },
+  '/works': { page: '/works' },
+  '/tool': { page: '/tool' },
+  '/contact': { page: '/contact' },
+}
+
 module.exports = withImages({
+  exportPathMap(res) {
+    return exportPathMap
+  },
   exclude: [
     resolveApp('src/assets/fonts/svg'),
     resolveApp('src/assets/images/exclude'),
