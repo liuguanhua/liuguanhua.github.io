@@ -86,12 +86,36 @@ const Footer: React.FC = () => {
   return (
     <>
       <footer
-        style={bodyStyle}
+        style={{ padding: '8px 0', ...bodyStyle }}
         className={`w-100 l-b-0 tac bg-color-white pos-abs ${footer}`}
       >
-        <h4 className="font-weight-normal">
-          Copyright ©<span>2016-{currentYear}</span>个人版权所有
+        <h4
+          style={{
+            margin: 0,
+          }}
+          className="font-weight-normal"
+        >
+          ©<span>2016-{currentYear}</span>{' '}
+          <a href="http://lgh930.com" target="_blank">
+            lgh930.com
+          </a>{' '}
+          版权所有{' '}
+          <a href="https://beian.miit.gov.cn/" target="_blank">
+            粤ICP备2020101870号
+          </a>
         </h4>
+        <a
+          target="_blank"
+          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502006448"
+        >
+          <img
+            style={{
+              verticalAlign: 'top',
+            }}
+            src={require('@images/icon-record.png')}
+          />
+          粤公网安备 44030502006448号
+        </a>
       </footer>
       <SideOperate />
     </>
