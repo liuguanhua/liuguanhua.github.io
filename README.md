@@ -13,7 +13,7 @@
 
 ## 🏠 主页
 
-[地址一 https://lgh.vercel.app/](https://lgh.vercel.app/)
+[地址一 http://lgh930.com/](http://lgh930.com/)
 
 [地址二 https://liuguanhua.github.io/](https://liuguanhua.github.io/)
 
