@@ -403,8 +403,16 @@ export const WorkExperience = () => {
               <div>
                 {logoName && (
                   <a
-                    href={links}
-                    target="_blank"
+                    href={links || '#'}
+                    {...(links
+                      ? {
+                          target: '_blank',
+                        }
+                      : {
+                          onClick: (e) => {
+                            e.preventDefault()
+                          },
+                        })}
                     className="logo inline-block pos-rel"
                   >
                     <img
