@@ -13,14 +13,12 @@
 
 ## 🏠 主页
 
-[地址一 https://lgh.vercel.app/](https://lgh.vercel.app/)
-
-[地址二 https://liuguanhua.github.io/](https://liuguanhua.github.io/)
+[http://lgh930.com/](http://lgh930.com/)
 
 ## ⌨️ 本地开发
 
 ```
-下载：git clone -b development https://github.com/liuguanhua/liuguanhua.github.io.git
+下载：git clone https://github.com/liuguanhua/liuguanhua.github.io.git
 
 开发：
     cd liuguanhua.github.io
@@ -28,12 +26,12 @@
     yarn dev
 
 预览：
-    http://localhost:3000
+    http://localhost:9000
 ```
 
 ## 👤 作者
 
-- 个人主页: [liuguanhua.github.io](https://liuguanhua.github.io)
+- 个人主页: [lgh930.com](http://lgh930.com)
 - Github:[@liuguanhua](https://github.com/liguanhua)
 
 ## 🤝 支持

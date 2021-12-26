@@ -1,0 +1,80 @@
+@import '../common/mixin';
+
+@include media-lg() {
+  .works_wrapper {
+    :global {
+      .active {
+        border-bottom: 2px solid var(--color-primary);
+      }
+      .tabs-wrapper {
+        a {
+          margin: 0 var(--space-sm);
+        }
+      }
+      .tabs-active {
+        display: none;
+      }
+    }
+  }
+}
+
+.works_wrapper {
+  :global {
+    .tabs-active {
+      border-bottom: 2px solid var(--color-primary);
+    }
+  }
+}
+
+.works_list {
+  margin-top: 2%;
+  :global {
+    .item {
+      margin-bottom: 2%;
+      &:hover {
+        transition: 0.8s;
+        transform: translateY(-2px);
+        box-shadow: 0 0 10px var(--color-default-gray);
+      }
+      .photo {
+        transition: 0.8s;
+        opacity: 0.6;
+      }
+    }
+    .category {
+      border: 1px solid var(--color-default-gray);
+      padding: 2px 10px;
+      color: var(--color-gray);
+      border-radius: 15px;
+    }
+    .item {
+      position: relative;
+      border: 1px solid var(--color-lighten-gray);
+      > a {
+        position: relative;
+        max-height: 350px;
+        overflow: hidden;
+      }
+    }
+    .mouse-move-layer {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 50%;
+    }
+    .content {
+      padding: 2%;
+    }
+    .mask-root {
+      .app-dec {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+
+    .mask-layer {
+      background-color: rgba(#000, 0.5);
+    }
+  }
+}

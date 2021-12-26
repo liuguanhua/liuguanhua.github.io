@@ -1,0 +1,44 @@
+@import '../common/mixin';
+.toolbox {
+  :global {
+    li:not(:last-child) {
+      border-bottom: 1px solid var(--color-lighten-gray);
+    }
+    .caret-right {
+      margin-top: -2px;
+      border: {
+        style: solid;
+        width: 8px;
+        color: transparent transparent transparent var(--color-white);
+      }
+      transition: 0.3s;
+      transform-origin: 25%;
+    }
+    .active {
+      transform: rotate(90deg);
+    }
+    a {
+      margin: 0 -15px;
+      border-right: 1px solid var(--color-lighten-gray);
+      border-bottom: 1px solid var(--color-lighten-gray);
+      :hover {
+        background-color: var(--color-light-gray);
+      }
+    }
+    dt {
+      margin: auto;
+      @include equal-wh(64);
+      > div {
+        @include equal-wh(100%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    dd {
+      text-transform: capitalize;
+    }
+    .tool-item {
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@import 'mixin';
+
+// 定位
+@include each-content($position-list) using ($key, $value) {
+  .pos-#{$key} {
+    position: #{$value};
+  }
+}
+@include each-content($locate-list) using ($keys, $values) {
+  $cls: generate-cls-name($keys, null);
+  @include generate-locate-content($values, '.#{$cls}-0');
+}
+
+@for $i from 1 through 5 {
+  .z-#{$i} {
+    z-index: $i;
+  }
+}
+
+// 布局
+.w-h-100 {
+  @include equal-wh(100%);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.min-h-100 {
+  min-height: 100%;
+}
+
+// 边距
+.r-m-p {
+  margin: 0;
+  padding: 0;
+}
+
+$margin-cls: '.m';
+$padding-cls: '.p';
+@include each-content($locate-space-list) using ($keys, $values) {
+  $mcls: generate-cls-name($keys, $margin-cls);
+  $pcls: generate-cls-name($keys, $padding-cls);
+
+  @include each-content($space-list) using ($key, $size) {
+    @include generate-mp-content($values, '#{$mcls}-#{$key}', margin, $size);
+    @include generate-mp-content($values, '#{$pcls}-#{$key}', padding, $size);
+  }
+}
+.m-auto {
+  margin: auto;
+}
+
+// 字体位置、大小、细粗
+@include each-content($text-align-list) using ($key, $value) {
+  .ta#{$key} {
+    text-align: #{$value};
+  }
+}
+
+@include each-content($size-list, true) using ($key, $value) {
+  .font-size-#{$key} {
+    font-size: $value;
+  }
+}
+
+.font-weight-bold {
+  font-weight: 900;
+}
+
+.font-weight-normal {
+  font-weight: 300;
+}
+
+// 背景(字体)颜色
+@include each-content($color-list, true) using ($keys, $value) {
+  $bg-cls: generate-cls-name($keys, '.bg-color');
+  $color-cls: generate-cls-name($keys, '.color');
+  #{$bg-cls} {
+    background-color: $value;
+  }
+  #{$color-cls} {
+    color: $value;
+  }
+}
+
+//其它
+
+.clearfix {
+  @include clearfix();
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cursign {
+  cursor: pointer;
+}
+
+.vam {
+  vertical-align: middle;
+}
+
+.bdr-half {
+  border-radius: 50%;
+}
+
+.bdr-small {
+  border-radius: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.bdb-line-primary {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.bd-none {
+  border: none;
+}
