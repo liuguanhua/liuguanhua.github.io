@@ -33,6 +33,15 @@ const NextHead: React.FC<INextHeadProps> = ({ title = name }) => {
         rel="stylesheet"
       ></link>
       {/* <script src={`${publicPath}config.js?${BUILD_ID}`}></script> */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4ME6W0NDR"></script>
+      <script dangerouslySetInnerHTML={{
+        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-K4ME6W0NDR');
+          `
+      }}></script>
     </Head>
   )
 }
