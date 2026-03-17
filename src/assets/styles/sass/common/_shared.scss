@@ -8,15 +8,23 @@
 
 @font-face {
   font-family: 'Niconne-Regular';
-  src: url('~@fonts/font-niconne/Niconne-Regular.eot'),
+  src:
+    url('~@fonts/font-niconne/Niconne-Regular.eot'),
     url('~@fonts/font-niconne/Niconne-Regular.svg'),
     url('~@fonts/font-niconne/Niconne-Regular.ttf'),
     url('~@fonts/font-niconne/Niconne-Regular.woff');
 }
 
 body {
-  font: lighter 14px/1.5 'Helvetica Neue', 'Helvetica', 'HanHei SC',
-    'PingFang SC', 'STHeitiSC-Light', 'Arial', 'Microsoft Yahei', sans-serif;
+  font:
+    14px/1.8 'Helvetica Neue',
+    'Helvetica',
+    'HanHei SC',
+    'PingFang SC',
+    'STHeitiSC-Light',
+    'Arial',
+    'Microsoft Yahei',
+    sans-serif;
   background-color: var(--color-light-gray);
   color: var(--color-default-gray);
 }
