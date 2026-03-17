@@ -77,7 +77,7 @@ const baseInfo: {
     },
     links: '//github.com/liuguanhua/',
     title: {
-      text: 'liuguanhua.github.io',
+      text: 'github.com/liuguanhua',
       className: 'm-l-md',
     },
   },
@@ -85,36 +85,30 @@ const baseInfo: {
     icon: {
       component: SvgLinks,
     },
-    links: 'http://lghayy.zcool.com.cn/',
-    title: 'lghayy.zcool.com.cn',
+    links: 'http://lgh930.com/',
+    title: 'www.lgh930.com',
   },
-]
+  ]
 
 const empiricInfo = [
   {
-    text: `具有PC端、移动端、h5、前后端分离及微信公众号、小程序的开发经验，开源社交分享组件、后台管理设计方案至GitHub。熟练使 用HTML(5)、CSS(3)、JavaScript构建高性能的Web应用程序。`,
+    text: `深入掌握现代前端技术栈，包括 React、Vue、TypeScript、Next.js、UniApp、Vite、Rsbuild、Jotai、UnoCSS、Ant Design、Element UI 等，均有完整项目实践经验。`,
   },
   {
-    text: `熟悉JavaScript、ES6、预编译TypeScript、jQuery类库，原生BOM、DOM对象。熟练运用Ajax、Json进行数据交互，常用Axios。`,
+    text: `熟悉工程化与架构设计，了解 Monorepo + Turborepo 方案，具备独立搭建前端工程体系的能力；代码规范方面有 Biome、ESLint 等工具的落地经验。`,
   },
   {
-    text: `熟练Flex布局，预处理器Sass，熟悉AntDesign、ElementUI、BootStrap等常用前端UI框架。了解Less、Styled-Components。`,
+    text: `具备全链路开发与部署能力，熟练使用 Git/SVN 进行版本管理，掌握 Nginx、PM2 部署，Charles 抓包，Ngrok 代理及 Shell 基本操作。`,
   },
   {
-    text: `熟悉React、Vue框架进行模块化开发单页应用，状态管理库Redux、Vuex、Dva，SSR开发Next、NuxtJs，采用过RequireJs构建过 个人项目。了解Angular、SeaJs、React-Native。`,
+    text: `主导或深度参与过地图、BI平台、社区、备案、任务流程管理、微信小程序/公众号、直播、旅游、办公等多类型项目开发，项目详见作品集（http://lgh930.com/works）`,
   },
   {
-    text: `开发过健身类微信小程序(WePY)，公众号端直播平台，能快速进行跨多尺寸、多平台设备开发，会用PhotoShop界面设计工具进行页面设计和原型切图。了解IlluStrator、CorelDraw。`,
+    text: `在 GitHub（github.com/liuguanhua）开源了社交分享组件、省市区级联 Node.js 爬虫及后台管理设计方案，具备良好的技术沉淀与分享意识。`,
   },
   {
-    text: `能使用NodeJs、Gulp、WebPack搭建开发环境，并使用过Express和MockJs开发过数据接口，Postman工具进行接口测试。`,
-  },
-  {
-    text: `熟悉使用Git版本控制，Charles抓包，掌握Linux Shell基本命令。了解Http协议、Svn、Jenkins、Docker、MySQL。`,
-  },
-  {
-    text: `拥有良好的代码编程习惯，较强的学习能力和解决问题的能力，能保证项目在周期内完成的同时也兼顾了质量。`,
-  },
+    text: `在研发提效方面，积极使用 Cursor、Copilot 等 AI 编码助手提升开发效率，并利用 Claude、Gemini、GPT 等模型进行 UI 代码生成与开发辅助。`,
+  }
 ]
 
 const hobbyInfo: {
@@ -350,6 +344,14 @@ export const MyHobbyAndHonor: React.FC = () => {
         }}
       />
       <ul className="row-content">
+
+        <li>
+          <p>
+            <SvgIcon component={SvgCalendar} />
+            <span className="font-family-georgia m-l-r-md">2020-12</span>
+            荣获公司“最佳新人奖”（表现优秀，绩效突出，对工作认真负责）
+          </p>
+        </li>
         <li>
           <p>
             <SvgIcon component={SvgCalendar} />
@@ -445,9 +447,9 @@ export const WorkExperience = () => {
                     </span>
                   </time>
                   <h4 className="color-primary r-m-p m-t-b-md">工作描述：</h4>
-                  <p dangerouslySetInnerHTML={createMarkup(details)} />
+                  <p dangerouslySetInnerHTML={createMarkup(details.split('\n').join('<br>'))} />
                   <h4 className="color-primary r-m-p m-t-b-md">涉及项目：</h4>
-                  <p dangerouslySetInnerHTML={createMarkup(project)} />
+                  <p dangerouslySetInnerHTML={createMarkup(project.split('\n').join('<br>'))} />
                 </div>
               </div>
             </li>

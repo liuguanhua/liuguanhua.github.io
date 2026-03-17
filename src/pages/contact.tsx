@@ -1,15 +1,12 @@
 import React from 'react'
 
-import { LayoutMain } from '@components/layout'
-import { Banner, SvgIcon, Modal } from '@components/common'
+import { Banner, Modal, SvgIcon } from '@components/common'
 import { useIsVisible } from '@components/hooks'
+import { LayoutMain } from '@components/layout'
 
+import { ReactComponent as SvgEmail } from '@fonts/svg/contact/email.svg'
 import { ReactComponent as SvgMoblie } from '@fonts/svg/contact/moblie.svg'
 import { ReactComponent as SvgWeChat } from '@fonts/svg/contact/wechat.svg'
-import { ReactComponent as SvgQQ } from '@fonts/svg/contact/qq.svg'
-import { ReactComponent as SvgSina } from '@fonts/svg/contact/sina.svg'
-import { ReactComponent as SvgEmail } from '@fonts/svg/contact/email.svg'
-import { ReactComponent as SvgLinks } from '@fonts/svg/home/links.svg'
 
 interface IContactProps {}
 
@@ -36,30 +33,9 @@ const Contact: React.FC<IContactProps> = () => {
             <span>微信</span>
           </li>
           <li className="col-6 col-lg-4">
-            <a
-              target="_blank"
-              href="//wpa.qq.com/msgrd?v=3&uin=1591151425&site=qq&menu=yes"
-            >
-              <SvgIcon component={SvgQQ} />
-              <span>QQ</span>
-            </a>
-          </li>
-          <li className="col-6 col-lg-4">
-            <a target="_blank" href="https://weibo.com/lghayy">
-              <SvgIcon component={SvgSina} />
-              <span>新浪微博</span>
-            </a>
-          </li>
-          <li className="col-6 col-lg-4">
             <a href="mailto:lghayy@foxmail.com">
               <SvgIcon component={SvgEmail} />
               <span>lghayy@foxmail.com</span>
-            </a>
-          </li>
-          <li className="col-6 col-lg-4">
-            <a target="_blank" href="http://lghayy.zcool.com.cn/">
-              <SvgIcon component={SvgLinks} />
-              <span>lghayy.zcool.com.cn</span>
             </a>
           </li>
         </ul>

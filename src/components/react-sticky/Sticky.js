@@ -34,7 +34,7 @@ export default class Sticky extends Component {
     super(props, context)
     if (!this.context.subscribe)
       throw new TypeError(
-        'Expected Sticky to be mounted within StickyContainer'
+        'Expected Sticky to be mounted within StickyContainer',
       )
 
     this.context.subscribe(this.handleContainerEvent)
@@ -87,6 +87,7 @@ export default class Sticky extends Component {
       ? {}
       : {
           position: 'fixed',
+          background: 'var(--color-light-gray)',
           top:
             bottomDifference > 0
               ? this.props.relative
@@ -125,7 +126,7 @@ export default class Sticky extends Component {
         ref: (content) => {
           this.content = ReactDOM.findDOMNode(content)
         },
-      }
+      },
     )
 
     return (

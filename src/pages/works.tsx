@@ -149,15 +149,8 @@ const WorkItem: React.FC<{
   onMouseIn?: TOnMouseEventFunc
   onMouseOut?: TOnMouseEventFunc
 }> = ({ item = {}, onVisitContent, onMouseIn, onMouseOut }) => {
-  const {
-    category,
-    desc,
-    qrcodeImg,
-    title,
-    searchKeyword,
-    visible,
-    links,
-  } = item
+  const { category, desc, qrcodeImg, title, searchKeyword, visible, links } =
+    item
 
   const visitLinksProps = {
     href: links || '#',
@@ -209,10 +202,12 @@ const WorkItem: React.FC<{
         <p>{desc}</p>
         <div layout-align="space-between center">
           <span className="category">{category}</span>
-          <a className="color-primary bdb-line-primary" {...visitLinksProps}>
-            <span className="vam">访问链接</span>
-            <SvgIcon className="m-l-xs" component={SvgPaperPlane} />
-          </a>
+          {links && (
+            <a className="color-primary bdb-line-primary" {...visitLinksProps}>
+              <span className="vam">访问链接</span>
+              <SvgIcon className="m-l-xs" component={SvgPaperPlane} />
+            </a>
+          )}
         </div>
       </figcaption>
       {(qrcodeImg || searchKeyword) && (
@@ -232,7 +227,7 @@ const WorkItem: React.FC<{
             />
           ) : (
             <div className="app-dec pos-abs color-white font-size-md">
-              进入微信APP-{'>'}点击发现-{'>'}选择小程序搜-{'>'}索 "
+              进入微信APP-{'>'}点击发现-{'>'}选择小程序搜索-{'>'} "
               <span className="color-primary"> {searchKeyword} </span>" 访问
             </div>
           )}
@@ -294,9 +289,8 @@ const TabsWorksContent: React.FC<{
 
   const onMouseOut: TOnMouseEventFunc = (e) => {
     const currentDom = e.currentTarget
-    const domImg = currentDom.parentNode?.querySelector<HTMLImageElement>(
-      '.photo'
-    )
+    const domImg =
+      currentDom.parentNode?.querySelector<HTMLImageElement>('.photo')
     if (!domImg) return
     const marginTopVal = getStyle(domImg).marginTop
     domImg.style.cssText = `margin-top:${marginTopVal};`
@@ -390,10 +384,10 @@ const Works: React.FC<IWorksProps> = () => {
         pageTitleProps={{
           zhName: (
             <>
-              <span className="font-family-georgia">40</span>个作品
+              <span className="font-family-georgia">50</span>个作品
             </>
           ),
-          enName: 'more than 40 works',
+          enName: 'more than 50 works',
         }}
       >
         <StickyContainer>

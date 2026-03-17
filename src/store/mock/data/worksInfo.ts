@@ -2,6 +2,8 @@ const imgPath = 'works/'
 
 const pcYxtdimgSrc = `${imgPath}yxtd/`,
   pcHzimgSrc = `${imgPath}latest/`,
+  pcNyimgSrc = `${imgPath}latest/`,
+  pcQhdataimgSrc = `${imgPath}qhdata/`,
   pcXjimgSrc = `${imgPath}xunjie/`,
   pcRzltimgSrc = `${imgPath}rzlt/`,
   wapimgSrc = `${imgPath}wap/`,
@@ -11,38 +13,85 @@ const pcYxtdimgSrc = `${imgPath}yxtd/`,
 
 const latest = [
   {
+    imgSrc: pcQhdataimgSrc + '2.png',
+    title: '智慧统计领导驾驶舱（地图）',
+    desc: '在前海大数据 BI 平台中区划 + 落点可视化组件，支持中屏/大屏双场景展示与深色/浅色主题切换，动态呈现珠海各区不同时段的经济数据指标。',
+    category: '企业服务',
+  },
+  {
+    imgSrc: pcQhdataimgSrc + '1.png',
+    title: '数据与内容平台',
+    desc: '支持通过企业标签、外部文件导入及推荐企业等多维方式灵活录入数据，对高/中/低风险企业进行量化统计与监测预警，并集成企业基本信息、股东结构、投融资记录及财务数据的全景查阅能力。',
+    category: '企业服务',
+  },
+  {
+    imgSrc: pcNyimgSrc + '8.jpg',
+    links: '//cnsx-console.jdcloud.com/compute/vm/create',
+    title: '京东伙伴云主机',
+    desc: '代理公司香港节点云主机资源服务。',
+    category: '企业服务',
+  },
+  {
+    imgSrc: pcNyimgSrc + '4.jpg',
+    title: '共享资源池',
+    desc: '面向合作商提供云服务器、IDC 托管及相关云计算产品的一站式服务平台，支持一键对接与按需资源获取，为企业提供降本增效的云计算解决方案。',
+    category: '企业服务',
+  },
+  {
+    imgSrc: pcNyimgSrc + '5.jpg',
+    title: 'ICP备案H5',
+    desc: '面向企业/个人用户的移动端身份核验 Web 应用，支持手机扫码登录、主体资料与证件上传、人脸识别身份核验及后台人工审核全流程闭环。',
+    category: '企业服务',
+  },
+  {
+    imgSrc: pcNyimgSrc + '7.jpg',
+    title: '阿帕云官网',
+    links: '//apayun.com/',
+    desc: '高品质IDC行业软件的开发和创新，提供整体的云化解决方案及专业的业务管理软件。',
+    category: '企业服务',
+  },
+  {
+    imgSrc: pcNyimgSrc + '6.jpg',
+    title: '阿帕云社区',
+    links: '//club.apayun.com/',
+    desc: '最有价值的IDC行业问答社区。',
+    category: '社区',
+  },
+  {
     imgSrc: pcHzimgSrc + '1.jpg',
     title: '任务管理信息系统',
-    links: 'http://wonfull2020.hz9981.com/',
-    desc:
-      '具有上传(下发)制度，分配任务，事项办理，创建会议等功能，跨部门之间可以相互协作办公， 可以掌握每个部门、每个员工的工作进度和执行情况。',
+    desc: '主要用于企业(个人)跨部门协同办公平台，涵盖制度上传下发、任务分配、事项办理、会议管理等核心功能，支持部门间协作联动，可实时掌握每位员工的工作进度与任务执行情况。',
     category: '企业服务',
   },
   {
     imgSrc: pcHzimgSrc + '2.jpg',
     title: '督查管理信息系统',
-    links: 'https://demo.hz9981.com/',
-    desc:
-      '一个确保执行力落地执行的庞大督查体系，发现问题拍照即时上传，监督整改，明确责任人，解决加油站检查质量不高、整改不到位、数据分散等问题的产品。',
+    desc: '面向加油站的督查管理平台，构建从问题发现、拍照上传、责任认定到整改复核的完整督查闭环，有效解决检查质量不高、整改不到位、数据分散等痛点，全面提升执行力落地效率。',
     category: '企业服务',
   },
   {
     imgSrc: pcHzimgSrc + '3.jpg',
     title: 'React-Antd-Admin',
-    links: 'https://react-antd-admin.lhh.now.sh/',
-    desc:
-      '基于工作中开发需要，设计了一个后台前端管理系统，节省从零开始搭建的时间，使用Node、Mockjs模拟了一层数据服务， 部署在Now.sh平台上。',
+    links: 'http://react-admin.lgh930.com/',
+    desc: '基于工作中开发需要，设计了一个后台前端管理系统，节省从零开始搭建的时间，使用Express、Mockjs模拟了一层数据服务，通过Nginx工具部署在腾讯云服务器。',
     category: '后台应用',
   },
 ]
 
 const applets = [
   {
+    imgSrc: appimgSrc + '2.png',
+    title: '法法通',
+    searchKeyword: '法法通',
+    desc: '综合性法律咨询服务平台。',
+    txtdetails: '法法通',
+    category: '小程序',
+  },
+  {
     imgSrc: appimgSrc + '1.jpg',
     title: '趣点匣子',
     searchKeyword: '趣点匣子',
-    desc:
-      '趣点匣子产品分为女生舱、男生舱和混合舱三种，健身用户通过自身的定位选择附近的仓体，根据所提供的时间段进行预约充值健身。',
+    desc: '趣点匣子产品分为女生舱、男生舱和混合舱三种，健身用户通过自身的定位选择附近的仓体，根据所提供的时间段进行预约充值健身。',
     txtdetails: '趣点匣子',
     category: '小程序',
   },
@@ -53,8 +102,7 @@ const pc = [
     imgSrc: pcRzltimgSrc + '1.jpg',
     title: '人在旅途OA系统',
     links: 'http://oa.zgrzlt.com/',
-    desc:
-      '办公系统方便员工进行企业内部资料下载，了解公司组织架构及最新动态，发布的公告消息同步到公司每一个员工使用的钉钉客户端。',
+    desc: '办公系统方便员工进行企业内部资料下载，了解公司组织架构及最新动态，发布的公告消息同步到公司每一个员工使用的钉钉客户端。',
     txtdetails: '人在旅途OA系统（官网地址：http://oa.zgrzlt.com/）',
     category: '办公',
   },
@@ -62,8 +110,7 @@ const pc = [
     imgSrc: pcYxtdimgSrc + '1.jpg',
     title: '欧若拉商城开发',
     links: 'http://www.ledcenter.com.cn/',
-    desc:
-      '专业生产LED的直接厂家，从事LED的研发，生产，销售与服务一条体系服务出口的国际贸易公司，通过网上新模式来销售产品，商品分类，企业介绍，用户可直接登录官网、购买商品、下单配送、表单留言，后台可以进行产品的上架、删除、更新。',
+    desc: '专业生产LED的直接厂家，从事LED的研发，生产，销售与服务一条体系服务出口的国际贸易公司，通过网上新模式来销售产品，商品分类，企业介绍，用户可直接登录官网、购买商品、下单配送、表单留言，后台可以进行产品的上架、删除、更新。',
     txtdetails:
       '欧诺拉光电科技有限公司（官网地址：http://www.ledcenter.com.cn/）',
     category: '电商',
@@ -329,8 +376,7 @@ const webApp = [
     qrcodeImg: qrcodeimgSrc + '4.png',
     txtdetails: '直播与夺宝相结合的新型购物平台',
     category: '移动网页',
-    desc:
-      '直播与夺宝相结合的新型购物平台。视频在线播放，可以与主播互动聊天，赠送礼物，参与抽奖，查看最新揭晓期数及消息动态，微信登录、充值，可在平台下单购买心仪的商品。',
+    desc: '直播与夺宝相结合的新型购物平台。视频在线播放，可以与主播互动聊天，赠送礼物，参与抽奖，查看最新揭晓期数及消息动态，微信登录、充值，可在平台下单购买心仪的商品。',
   },
   {
     imgSrc: webAppimgSrc + '2.jpg',
@@ -346,8 +392,7 @@ const webApp = [
     qrcodeImg: qrcodeimgSrc + '6.png',
     txtdetails: '通过猜大猜小来确定输赢的游戏',
     category: '移动网页',
-    desc:
-      '通过猜大猜小来确定输赢的游戏，竞猜对象选择猜大猜小后，充值1元所获取的微信支付“交易单号”的尾数大小来判定，手机号获取验证码进行登录，微信充值、提现，最新盈利播报，用户操作明细，代理赚钱，领取红包。',
+    desc: '通过猜大猜小来确定输赢的游戏，竞猜对象选择猜大猜小后，充值1元所获取的微信支付“交易单号”的尾数大小来判定，手机号获取验证码进行登录，微信充值、提现，最新盈利播报，用户操作明细，代理赚钱，领取红包。',
   },
 ]
 
