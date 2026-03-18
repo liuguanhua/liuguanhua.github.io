@@ -1,23 +1,23 @@
-import React, { useState, useEffect, useRef, useContext } from 'react'
+import { Sticky, StickyContainer } from '@components/react-sticky'
 import classNames from 'classnames'
-import Lazyload from 'react-lazyload'
-import { StickyContainer, Sticky } from '@components/react-sticky'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroller'
+import Lazyload from 'react-lazyload'
 
 import styles from '@styles/sass/page/works.module.scss'
 
+import { DEFAULT_PAGE_SIZE } from '@scripts/constant'
 import {
   findDataIndex,
   getStyle,
-  paginationAfterData,
   isValidArray,
+  paginationAfterData,
 } from '@scripts/utils'
-import { DEFAULT_PAGE_SIZE } from '@scripts/constant'
 import { worksInfo } from '@store/mock'
 
 import { CtxStore } from '../components/context'
 
-import { Banner, SvgIcon, Loading } from '@components/common'
+import { Banner, Loading, SvgIcon } from '@components/common'
 import { LayoutMain } from '@components/layout'
 
 import { ReactComponent as SvgPaperPlane } from '@fonts/svg/merge/paper-plane.svg'
@@ -374,6 +374,8 @@ const TabsWorksContent: React.FC<{
 
 interface IWorksProps {}
 
+const totalNum = tabHeadInfo.reduce((pre, cur) => pre + cur.num, 0)
+
 const Works: React.FC<IWorksProps> = () => {
   const [activeKey, setActiveKey] = useState('')
 
@@ -384,7 +386,7 @@ const Works: React.FC<IWorksProps> = () => {
         pageTitleProps={{
           zhName: (
             <>
-              <span className="font-family-georgia">50</span>个作品
+              <span className="font-family-georgia">{totalNum}</span>个作品
             </>
           ),
           enName: 'more than 50 works',
